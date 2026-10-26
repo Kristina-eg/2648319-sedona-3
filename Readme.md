@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Кристина Егорова](https://up.htmlacademy.ru/htmlcss-individual/3/user/2648319).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
 
 ---
 
