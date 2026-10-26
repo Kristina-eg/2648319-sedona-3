@@ -2,6 +2,7 @@
 
 * Студент: [Кристина Егорова](https://up.htmlacademy.ru/htmlcss-individual/3/user/2648319).
 * Наставник: [Виктория Никитина](https://htmlacademy.ru/profile/id1217273).
+* Сайт: [Проект Седона](https://kristina-eg.github.io/2648319-sedona-3/).
 
 ---
 
