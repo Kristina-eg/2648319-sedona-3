@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="/styles/style.css">
   </head>
   <body>
     <header class="header" data-test="header">
       <a href="index.html" class="logo-link">
-        <img src="/img/logo.svg" alt="Логотип Седона" class="logo-img" width="140px" height="70px">
+        <img src="images/logo.svg" alt="Логотип Седона" class="logo-img" width="140px" height="70px">
       </a>
       <nav class="navigation">
         <ul class="navigation-list navigation-list-left">
@@ -24,20 +25,20 @@
 
         <ul class="navigation-list navigation-list-right">
           <li class="navigation-item">
-            <a href="#" class="navigation-link search">
+            <a href="#" class="navigation-search">
               <span class="visually-hidden">Поиск</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#000" d="m19.5 18-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87a8 8 0 0 0-8-7.96c-4.4 0-8 3.68-8 8.06a8 8 0 0 0 12.9 6.26l3.7 3.68zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96"/></svg>
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link favorites">
+            <a href="#" class="navigation-favorites">
               <span class="visually-hidden">Избранное</span>
               <span class="count">12</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 20"><path fill="#000" d="M9.9 19a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 6.5 2C7.8 2 9 2.5 10 3.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3m-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4s-.6-.2-.8-.4c-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1q-.15 0 0 0"/></svg>
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link button navigation-button">
+            <a href="#" class="navigation-button button">
               Хочу сюда!
             </a>
           </li>
@@ -47,10 +48,10 @@
     <main class="main-container" data-test="main">
       <section class="section-hero" data-test="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="/img/welcome.svg" alt="Седона" class="hero-img" width="458px" height="352px">
+        <img src="/images/welcome.svg" alt="Седона" class="hero-img" width="458px" height="352px">
       </section>
       <section class="section-advantages" data-test="advantages">
-        <h2 class="advatages-title">
+        <h2 class="advatages-title title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
         <p class="advatages-text">
@@ -58,13 +59,13 @@
         </p>
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advatages-list-title">
+            <h3 class="advatages-list-title advatages-white">
               Настоящий городок
             </h3>
-            <p class="advatages-list-text">
+            <p class="advatages-list-text advatages-white">
               Седона — не аттракцион для туристов, там течёт своя жизнь
             </p>
-            <img src="/img/advantages-1.jpg" alt="Улицы Седоны" class="advatages-list-img" width="800px" height="385px">
+            <img src="/images/advantages-1.jpg" alt="Улицы Седоны" class="advatages-list-img" width="800px" height="385px">
           </li>
           <li class="advantages-item">
             <h3 class="advatages-list-title">
@@ -91,18 +92,18 @@
             </p>
           </li>
           <li class="advantages-item">
-            <img src="/img/advantages-2.jpg" alt="Мост Дьявола в Седоне" class="advatages-list-img" width="800px" height="385px">
-            <h3 class="advatages-list-title">
+            <img src="/images/advantages-2.jpg" alt="Мост Дьявола в Седоне" class="advatages-list-img" width="800px" height="385px">
+            <h3 class="advatages-list-title advatages-white">
               Там есть мост Дьявола
             </h3>
-            <p class="advatages-list-text">
+            <p class="advatages-list-text advatages-white">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
           </li>
         </ul>
       </section>
       <section class="section-about" data-test="search">
-        <h2 class="about-title">
+        <h2 class="about-title title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h2>
         <p class="about-text">
@@ -130,7 +131,7 @@
         </ul>
       </section>
       <section class="section-booking" data-test="subscribe">
-        <h2 class="booking-title">
+        <h2 class="booking-title title">
           Заинтересовались?
         </h2>
         <p class="booking-text">
@@ -141,7 +142,7 @@
         </button>
       </section>
       <section class="subscription">
-        <h2 class="subscription-title">
+        <h2 class="subscription-title title">
           Подпишись на рассылку
         </h2>
         <p class="subscription-text">
