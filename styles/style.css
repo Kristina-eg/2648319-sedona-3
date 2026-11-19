@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: bold;
   font-weight: 700;
-  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -22,7 +22,14 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -86,11 +93,12 @@ body {
 
 .section-hero {
   text-align: center;
-  background-color: purple;
-  background-image: url(/images/hero-bg.jpg);
-  background-position: center center;
+  background-color: aqua;
+  background-image: url("../images/hero-line.svg"), url("../images/hero-bg.jpg");
+  background-position: left bottom, center top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 57px, cover;
+  padding: 51px 0 82px;
 }
 
 /* Advantages */
@@ -104,16 +112,16 @@ body {
 }
 
 .advantages-item {
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.122);
 }
 
 .advantages-item:first-child,
 .advantages-item:last-child {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-item:nth-child(3) {
-  background-color: #83B3D333;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advatages-list-title {
@@ -156,27 +164,38 @@ body {
 }
 
 .about-item {
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.122);
 }
 
 .about-item:nth-child(2) {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 /* Booking */
 
 .section-booking {
+  padding-top: 98px;
+  padding-bottom: 96px;
   text-align: center;
+}
+
+.booking-title {
+  margin-bottom: 20px;
+}
+
+.booking-text {
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .booking-button {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 17px;
+  line-height: 37px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
-  padding: 8px 50px;
+  padding: 7px 52px;
   border: none;
   border-radius: 4px;
 }
@@ -185,7 +204,7 @@ body {
 
 .subscription {
   text-align: center;
-  background-image: url(/images/booking-bg.jpg);
+  background-image: url("../images/booking-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -193,7 +212,7 @@ body {
 
 .subscription-title,
 .subscription-text {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .subscription-form-input {
@@ -208,8 +227,8 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   padding: 8px 50px;
   border: none;
   border-radius: 4px;
@@ -231,7 +250,7 @@ body {
 /* Header inner */
 
 .header-inner {
-  background-image: url(/images/catalog-bg.jpg);
+  background-image: url("../images/catalog-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -241,7 +260,7 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .breadcrumbs-link {
@@ -255,28 +274,28 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .control {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .filter-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 8px 50px;
   border: none;
   border-radius: 4px;
 }
 
 .button-submit {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-reset {
@@ -320,7 +339,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #756157;
   padding: 8px 50px;
   border-radius: 4px;
@@ -331,15 +350,15 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
   padding: 8px 50px;
   border: none;
   border-radius: 4px;
 }
 
 .card-current {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .card-rating {
@@ -348,7 +367,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding: 8px 50px;
 }
 
@@ -357,15 +376,15 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   border-radius: 4px;
 }
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 /* Subscription-catalog */
