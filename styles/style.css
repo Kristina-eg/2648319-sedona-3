@@ -112,7 +112,20 @@ body {
   text-align: center;
   text-decoration: none;
   color: #000000;
+  position: relative;
 }
+
+.navigation-current::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: -19px;
+  height: 2px;
+  background-color: #756257;
+}
+
+
 
 .navigation-button {
   display: inline-block;
@@ -342,7 +355,7 @@ body {
 }
 
 .booking-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 37px;
@@ -394,7 +407,7 @@ body {
 }
 
 .subscription-form-input {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
@@ -407,7 +420,7 @@ body {
 }
 
 .subscription-form-button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
