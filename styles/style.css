@@ -71,7 +71,7 @@ body {
 .header {
   position: relative;
   display: flex;
-  padding: 13px 70px 14px 254px;
+  padding: 13px 71px 14px 254px;
 }
 
 .navigation {
@@ -90,6 +90,12 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+}
+
+.navigation-list-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
 }
 
 
@@ -121,10 +127,34 @@ body {
   border-radius: 4px;
 }
 
+.navigation-favorites {
+  position: relative;
+  text-decoration: none;
+}
+
+.count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 4000;
+  color: #ffffff;
+  background-color: #7db54f;
+  padding: 0 4px;
+  border-radius: 50%;
+  max-width: 20px;
+  height: 20px;
+}
+
 /* Hero */
 
 .section-hero {
-  background-color: aqua;
+  background-color: #dce9f1;
   background-image: url("../images/hero-line.svg"), url("../images/hero-bg.jpg");
   background-position: left bottom, center top;
   background-repeat: no-repeat;
@@ -420,6 +450,14 @@ body {
 
 /* Header inner */
 
+.filter-group {
+  margin: 0;
+  padding: 0;
+  border: none;
+  min-width: 0;
+}
+
+
 .header-inner {
   background-image: url("../images/catalog-bg.jpg");
   background-position: center center;
@@ -446,6 +484,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  padding: 0;
 }
 
 .control {
